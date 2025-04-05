@@ -1,0 +1,733 @@
+{
+  "tasks": [
+    {
+      "label": "Run Current File",
+      "type": "shell",
+      "command": "./${fileBasenameNoExtension}",
+      "args": [],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared", // Changed from "new" to "shared"
+        "group": "myRunner" // Optional: Group tasks together
+      },
+      "problemMatcher": [],
+        "detail": "執行目前檔案" 
+    },
+    {
+      "type": "cppbuild",
+      "label": "C/C++: clang++ 目前檔案編譯",
+      "command": "/usr/bin/clang++",
+      "args": [
+        "-g",
+        "-std=gnu++17",
+        "-isysroot",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk",
+        "-mmacosx-version-min=11.00",
+        "-I",
+        "/Users/cric/wxWidgets/MacDyn/lib/wx/include/osx_cocoa-unicode-3.2",
+        "-I",
+        "/Users/cric/wxWidgets/include",
+        "-D",
+        "YccInSingleFileTest${fileBasenameNoExtension}=2",
+        "-D_FILE_OFFSET_BITS=64",
+        "-DwxDEBUG_LEVEL=0",
+        "-D__WXOSX_COCOA__",
+        "-Wall",
+        "-Wunused-parameter",
+        "-Wno-ctor-dtor-privacy",
+        "-Woverloaded-virtual",
+        "-Wno-deprecated-declarations",
+        "-DWXSUPPRESS_SIZER_FLAGS_CHECK",
+        "-O0",
+        "-fno-common",
+        "-dynamic",
+        "-fPIC",
+        "-fexec-charset=UTF-8",
+        "-I",
+        "${workspaceFolder}/src",
+        "-c",
+        "${file}"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/Objs"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": "build",
+      "detail": "只對目前檔案編譯"
+    },
+    {
+      "type": "cppbuild",
+      "label": "C/C++: clang++ 目前GUI檔案編譯",
+      "command": "/usr/bin/clang++",
+      "args": [
+        "-g",
+        "-isysroot",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk",
+        "-mmacosx-version-min=11.00",
+        "-I",
+        "/Users/cric/wxWidgets/MacDyn/lib/wx/include/osx_cocoa-unicode-3.2",
+        "-I",
+        "/Users/cric/wxWidgets/include",
+        "-D",
+        "YccInSingleFileTest${fileBasenameNoExtension}=2",
+        "-D_FILE_OFFSET_BITS=64",
+        "-DwxDEBUG_LEVEL=0",
+        "-D__WXOSX_COCOA__",
+        "-Wall",
+        "-Wunused-parameter",
+        "-Wno-ctor-dtor-privacy",
+        "-Woverloaded-virtual",
+        "-Wno-deprecated-declarations",
+        "-DWXSUPPRESS_SIZER_FLAGS_CHECK",
+        "-O0",
+        "-fno-common",
+        "-dynamic",
+        "-fPIC",
+        "-fexec-charset=UTF-8",
+        "-I",
+        "${workspaceFolder}/src",
+        "-c",
+        "${file}"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/Objs"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": "build",
+      "detail": "只對目前GUI檔案編譯"
+    },
+    {
+      "type": "cppbuild",
+      "label": "C/C++: clang++ 編譯",
+      "command": "/usr/bin/clang++",
+      "args": [
+        "-g",
+        "-std=gnu++17",
+        "-isysroot",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk",
+        "-mmacosx-version-min=11.00",
+        "-I",
+        "/Users/cric/wxWidgets/macbuild/lib/wx/include/osx_cocoa-unicode-static-3.1",
+        "-I",
+        "/Users/cric/wxWidgets/include",
+        "-I",
+        "/Users/cric/miniforge3/include",
+        "-I",
+        "/Users/cric/miniforge3/include/python3.9",
+        "-D",
+        "YccInSingleFileTest${fileBasenameNoExtension}=2",
+        "-D_FILE_OFFSET_BITS=64",
+        "-DwxDEBUG_LEVEL=0",
+        "-D__WXOSX_COCOA__",
+        "-Wall",
+        "-Wunused-parameter",
+        "-Wno-ctor-dtor-privacy",
+        "-Woverloaded-virtual",
+        "-Wno-deprecated-declarations",
+        "-O0",
+        "-fno-common",
+        "-dynamic",
+        "-fPIC",
+        "-fexec-charset=UTF-8",
+        "-I",
+        "${workspaceFolder}/src",
+        "-c",
+        "${fileDirname}/*.cpp"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/Objs"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": "build",
+      "detail": "對目前檔案的同一目錄的所有CPP檔案編譯"
+    },
+    {
+      "type": "cppbuild",
+      "label": "C/C++: clang++ GUI編譯",
+      "command": "/usr/bin/clang++",
+      "args": [
+        "-g",
+        "-std=gnu++17",
+        "-isysroot",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk",
+        "-mmacosx-version-min=11.00",
+        "-I",
+        "/Users/cric/wxWidgets/MacDyn/lib/wx/include/osx_cocoa-unicode-3.2",
+        "-I",
+        "/Users/cric/wxWidgets/include",
+        "-D",
+        "YccInSingleFileTest${fileBasenameNoExtension}=2",
+        "-D_FILE_OFFSET_BITS=64",
+        "-DwxDEBUG_LEVEL=0",
+        "-D__WXOSX_COCOA__",
+        "-Wall",
+        "-Wunused-parameter",
+        "-Wno-ctor-dtor-privacy",
+        "-Woverloaded-virtual",
+        "-Wno-deprecated-declarations",
+        "-DWXSUPPRESS_SIZER_FLAGS_CHECK",
+        "-O0",
+        "-fno-common",
+        "-dynamic",
+        "-fPIC",
+        "-fexec-charset=UTF-8",
+        "-I",
+        "${workspaceFolder}/src",
+        "-c",
+        "${fileDirname}/*.cpp"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/Objs"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": "build",
+      "detail": "對目前GUI檔案的同一目錄的所有CPP檔案編譯"
+    },
+    {
+      "type": "cppbuild",
+      "label": "C/C++: clang++ 連結",
+      "command": "/usr/bin/clang++",
+      "args": [
+        "-std=gnu++11",
+        "-mmacosx-version-min=10.10",
+        "-L/Users/cric/wxWidgets/MacDyn/lib",
+        "-framework",
+        "IOKit",
+        "-framework",
+        "Carbon",
+        "-framework",
+        "Cocoa",
+        "-framework",
+        "QuartzCore",
+        "-framework",
+        "AudioToolbox",
+        "-framework",
+        "System",
+        "-framework",
+        "OpenGL",
+        "-lwx_osx_cocoau_html-3.2",
+        "-lwx_baseu_xml-3.2",
+        "-lexpat",
+        "-lwx_osx_cocoau_core-3.2",
+        "-lwx_baseu-3.2",
+        "-lwxtiff-3.2",
+        "-lwxjpeg-3.2",
+        "-lwxpng-3.2",
+        "-framework",
+        "WebKit",
+        "-lwxregexu-3.2",
+        "-lz",
+        "-framework",
+        "Security",
+        "-lpthread",
+        "-liconv",
+        "-I",
+        "${workspaceFolder}/src",
+        "-D",
+        "YccInSingleFileTest${fileBasenameNoExtension}=2",
+        "-O0",
+        "-o",
+        "${workspaceFolder}/${fileBasenameNoExtension}",
+        "${workspaceFolder}/Objs/*.o"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/Objs"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": "build",
+      "detail": "對所有在OBJs目錄中的.o檔案，進行連結"
+    },
+    {
+      "type": "cppbuild",
+      "label": "C/C++: clang++ GUI連結",
+      "command": "/usr/bin/clang++",
+      "args": [
+        "-std=gnu++11",
+        "-mmacosx-version-min=10.10",
+        "-L/Users/cric/wxWidgets/MacDyn/lib",
+        "-framework",
+        "IOKit",
+        "-framework",
+        "Carbon",
+        "-framework",
+        "Cocoa",
+        "-framework",
+        "QuartzCore",
+        "-framework",
+        "AudioToolbox",
+        "-framework",
+        "System",
+        "-framework",
+        "OpenGL",
+        "-lwx_osx_cocoau_html-3.2",
+        "-lwx_baseu_xml-3.2",
+        "-lexpat",
+        "-lwx_osx_cocoau_core-3.2",
+        "-lwx_baseu-3.2",
+        "-lwxtiff-3.2",
+        "-lwxjpeg-3.2",
+        "-lwxpng-3.2",
+        "-framework",
+        "WebKit",
+        "-lwxregexu-3.2",
+        "-lz",
+        "-framework",
+        "Security",
+        "-lpthread",
+        "-liconv",
+        "-I",
+        "${workspaceFolder}/src",
+        "-D",
+        "YccInSingleFileTest${fileBasenameNoExtension}=2",
+        "-O0",
+        "-o",
+        "${workspaceFolder}/${fileBasenameNoExtension}",
+        "${workspaceFolder}/Objs/*.o",
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/Objs"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": "build",
+      "detail": "對所有在Objs和GUIObjs目錄中的所有.o檔案進行連結"
+    },
+    {
+      "type": "cppbuild",
+      "label": "C/C++: clang++ 單元連結",
+      "command": "/usr/bin/clang++",
+      "args": [
+        "-std=gnu++11",
+        "-mmacosx-version-min=10.10",
+        "-L/Users/cric/wxWidgets/MacDyn/lib",
+        "-framework",
+        "IOKit",
+        "-framework",
+        "Carbon",
+        "-framework",
+        "Cocoa",
+        "-framework",
+        "QuartzCore",
+        "-framework",
+        "AudioToolbox",
+        "-framework",
+        "System",
+        "-framework",
+        "OpenGL",
+        "-lwx_osx_cocoau_html-3.2",
+        "-lwx_baseu_xml-3.2",
+        "-lexpat",
+        "-lwx_osx_cocoau_core-3.2",
+        "-lwx_baseu-3.2",
+        "-lwxtiff-3.2",
+        "-lwxjpeg-3.2",
+        "-lwxpng-3.2",
+        "-framework",
+        "WebKit",
+        "-lwxregexu-3.2",
+        "-lz",
+        "-framework",
+        "Security",
+        "-lpthread",
+        "-liconv",
+        "-I",
+        "${workspaceFolder}/src",
+        "-D",
+        "YccInSingleFileTest${fileBasenameNoExtension}=2",
+        "-O0",
+        "-o",
+        "${workspaceFolder}/${fileBasenameNoExtension}",
+        "${workspaceFolder}/Objs/${fileBasenameNoExtension}.o"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/Objs"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": "build",
+      "detail": "對目前檔案的.o檔進行連結"
+    },
+    {
+      "type": "shell",
+      "label": "C/C++ : 目前檔案編譯和連結",
+      "command": "./${fileBasenameNoExtension}",
+      "dependsOrder": "sequence",
+      "dependsOn": [
+        "C/C++: clang++ 目前檔案編譯",
+        "C/C++: clang++ 連結"
+      ],
+      "detail": "對目前檔案進行編譯，並連結所有在Objs目錄中的.o檔",
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": "build"
+    },
+    {
+      "type": "shell",
+      "label": "C/C++ : 目前GUI檔案編譯和連結",
+      "command": "./${fileBasenameNoExtension}",
+      "dependsOrder": "sequence",
+      "dependsOn": [
+        "C/C++: clang++ 目前GUI檔案編譯",
+        "C/C++: clang++ GUI連結"
+      ],
+      "detail": "對目前GUI檔案進行編譯，並連結所有在Objs和GUIObjs目錄中的.o檔",
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": "build"
+    },
+    {
+      "type": "shell",
+      "label": "C/C++ : 單元編譯和連結",
+      "command": "./${fileBasenameNoExtension}",
+      "dependsOrder": "sequence",
+      "dependsOn": [
+        "C/C++: clang++ 目前檔案編譯",
+        "C/C++: clang++ 單元連結"
+      ],
+      "detail": "對目前檔案進行編譯，並只連結目前檔案的.o檔",
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": "build"
+    },
+    {
+      "type": "shell",
+      "label": "C/C++ : 編譯和連結",
+      "command": "./${fileBasenameNoExtension}",
+      "dependsOrder": "sequence",
+      "dependsOn": [
+        "C/C++: clang++ 編譯",
+        "C/C++: clang++ 連結"
+      ],
+      "detail": "對目前檔案的同一目錄的所有CPP檔案編譯，並連結Objs目錄中的所有.o檔",
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": "build"
+    },
+    {
+      "type": "shell",
+      "label": "C/C++ : GUI編譯和GUI連結",
+      "command": "./${fileBasenameNoExtension}",
+      "dependsOrder": "sequence",
+      "dependsOn": [
+        "C/C++: clang++ GUI編譯",
+        "C/C++: clang++ GUI連結"
+      ],
+      "detail": "對目前GUI檔案的同一目錄的所有CPP檔案編譯，並連結Objs和GUIObjs目錄中的所有.o檔",
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": "build"
+    },
+    {
+      "type": "shell",
+      "label": "C/C++ : PythonC++ g++ 編譯",
+      "command": "g++ -std=c++17 -shared -undefined dynamic_lookup -fPIC `python -m pybind11 --includes` BindCpp.cpp -o BindCpp.so",
+      "detail": "編譯C++檔案產生Python模組。",
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": "build"
+    },
+    {
+      "type": "cppbuild",
+      "label": "C/C++:PythonC++ clang++ Module",
+      "command": "/usr/bin/clang++",
+      "args": [
+        "-std=c++17",
+        "-shared",
+        "-undefined",
+        "dynamic_lookup",
+        "-fPIC",
+        "`python3.9 -m pybind11 --includes`",
+        "BindCpp.cpp",
+        "-o",
+        "BindCpp.so",
+        "-fPIC",
+        "`python3.9-config --ldflags`"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "detail": "編譯C++檔案產生Python模組。",
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": "build"
+    },
+    {
+      "type": "cppbuild",
+      "label": "C/C++: clang++ GUI連結",
+      "command": "/usr/bin/clang++",
+      "args": [
+        "-std=gnu++11",
+        "-mmacosx-version-min=10.10",
+        "-L/Users/cric/wxWidgets/MacDyn/lib",
+        "-framework",
+        "IOKit",
+        "-framework",
+        "Carbon",
+        "-framework",
+        "Cocoa",
+        "-framework",
+        "QuartzCore",
+        "-framework",
+        "AudioToolbox",
+        "-framework",
+        "System",
+        "-framework",
+        "OpenGL",
+        "-lwx_osx_cocoau_html-3.2",
+        "-lwx_baseu_xml-3.2",
+        "-lexpat",
+        "-lwx_osx_cocoau_core-3.2",
+        "-lwx_baseu-3.2",
+        "-lwxtiff-3.2",
+        "-lwxjpeg-3.2",
+        "-lwxpng-3.2",
+        "-framework",
+        "WebKit",
+        "-lwxregexu-3.2",
+        "-lz",
+        "-framework",
+        "Security",
+        "-lpthread",
+        "-liconv",
+        "-I",
+        "${workspaceFolder}/src",
+        "-D",
+        "YccInSingleFileTest${fileBasenameNoExtension}=2",
+        "-O0",
+        "-o",
+        "${workspaceFolder}/${fileBasenameNoExtension}",
+        "${workspaceFolder}/Objs/*.o",
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/Objs"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": "build",
+      "detail": "對所有在Objs的 .o 檔案進行連結"
+    },
+    {
+      "type": "cppbuild",
+      "label": "C/C++: clang++ GUI 單元連結",
+      "command": "/usr/bin/clang++",
+      "args": [
+        "-std=gnu++11",
+        "-mmacosx-version-min=10.10",
+        "-L/Users/cric/wxWidgets/MacDyn/lib",
+        "-framework",
+        "IOKit",
+        "-framework",
+        "Carbon",
+        "-framework",
+        "Cocoa",
+        "-framework",
+        "QuartzCore",
+        "-framework",
+        "AudioToolbox",
+        "-framework",
+        "System",
+        "-framework",
+        "OpenGL",
+        "-lwx_osx_cocoau_html-3.2",
+        "-lwx_baseu_xml-3.2",
+        "-lexpat",
+        "-lwx_osx_cocoau_core-3.2",
+        "-lwx_baseu-3.2",
+        "-lwxtiff-3.2",
+        "-lwxjpeg-3.2",
+        "-lwxpng-3.2",
+        "-framework",
+        "WebKit",
+        "-lwxregexu-3.2",
+        "-lz",
+        "-framework",
+        "Security",
+        "-lpthread",
+        "-liconv",
+        "-I",
+        "${workspaceFolder}/src",
+        "-D",
+        "YccInSingleFileTest${fileBasenameNoExtension}=2",
+        "-O0",
+        "-o",
+        "${workspaceFolder}/${fileBasenameNoExtension}",
+        "${workspaceFolder}/Objs/${fileBasenameNoExtension}.o"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/Objs"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": "build",
+      "detail": "只對目前檔案的 GUI Obj 連結"
+    },
+    {
+      "type": "shell",
+      "label": "C/C++ : 單元GUI編譯和單元GUI連結",
+      "command": "./${fileBasenameNoExtension}",
+      "dependsOrder": "sequence",
+      "dependsOn": [
+        "C/C++: clang++ 目前GUI檔案編譯",
+        "C/C++: clang++ GUI 單元連結"
+      ],
+      "detail": "對目前GUI檔案編譯，並連結目前檔案",
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": "build"
+    },
+    {
+      "type": "cppbuild",
+      "label": "C/C++: clang++ GUI WxTMain單元連結",
+      "command": "/usr/bin/clang++",
+      "args": [
+        "-std=gnu++11",
+        "-mmacosx-version-min=10.10",
+        "-L/Users/cric/wxWidgets/MacDyn/lib",
+        "-framework",
+        "IOKit",
+        "-framework",
+        "Carbon",
+        "-framework",
+        "Cocoa",
+        "-framework",
+        "QuartzCore",
+        "-framework",
+        "AudioToolbox",
+        "-framework",
+        "System",
+        "-framework",
+        "OpenGL",
+        "-lwx_osx_cocoau_html-3.2",
+        "-lwx_baseu_xml-3.2",
+        "-lexpat",
+        "-lwx_osx_cocoau_core-3.2",
+        "-lwx_baseu-3.2",
+        "-lwxtiff-3.2",
+        "-lwxjpeg-3.2",
+        "-lwxpng-3.2",
+        "-framework",
+        "WebKit",
+        "-lwxregexu-3.2",
+        "-lz",
+        "-framework",
+        "Security",
+        "-lpthread",
+        "-liconv",
+        "-I",
+        "${workspaceFolder}/src",
+        "-D",
+        "YccInSingleFileTest${fileBasenameNoExtension}=2",
+        "-O0",
+        "-o",
+        "${workspaceFolder}/${fileBasenameNoExtension}",
+        "${workspaceFolder}/Objs/WxTMain.o",
+        "${workspaceFolder}/Objs/${fileBasenameNoExtension}.o"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/Objs"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": "build",
+      "detail": "只對目前檔案和WxTMain連結"
+    },
+    {
+      "type": "cppbuild",
+      "label": "C/C++: clang++ GUI 單元連結",
+      "command": "/usr/bin/clang++",
+      "args": [
+        "-std=gnu++11",
+        "-mmacosx-version-min=10.10",
+        "-L/Users/cric/wxWidgets/MacDyn/lib",
+        "-framework",
+        "IOKit",
+        "-framework",
+        "Carbon",
+        "-framework",
+        "Cocoa",
+        "-framework",
+        "QuartzCore",
+        "-framework",
+        "AudioToolbox",
+        "-framework",
+        "System",
+        "-framework",
+        "OpenGL",
+        "-lwx_osx_cocoau_html-3.2",
+        "-lwx_baseu_xml-3.2",
+        "-lexpat",
+        "-lwx_osx_cocoau_core-3.2",
+        "-lwx_baseu-3.2",
+        "-lwxtiff-3.2",
+        "-lwxjpeg-3.2",
+        "-lwxpng-3.2",
+        "-framework",
+        "WebKit",
+        "-lwxregexu-3.2",
+        "-lz",
+        "-framework",
+        "Security",
+        "-lpthread",
+        "-liconv",
+        "-I",
+        "${workspaceFolder}/src",
+        "-D",
+        "YccInSingleFileTest${fileBasenameNoExtension}=2",
+        "-O0",
+        "-o",
+        "${workspaceFolder}/${fileBasenameNoExtension}",
+        "${workspaceFolder}/Objs/${fileBasenameNoExtension}.o"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/Objs"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": "build",
+      "detail": "只對目前檔案的 GUI Obj 連結"
+    },
+    {
+      "type": "shell",
+      "label": "C/C++ : 目前GUI檔案編譯和WTxMain連結",
+      "command": "./${fileBasenameNoExtension}",
+      "dependsOrder": "sequence",
+      "dependsOn": [
+        "C/C++: clang++ 目前GUI檔案編譯",
+        "C/C++: clang++ GUI WxTMain單元連結"
+      ],
+      "detail": "對目前GUI檔案編譯，並連結目前檔案",
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": "build"
+    }
+  ],
+  "version": "2.0.0"
+}

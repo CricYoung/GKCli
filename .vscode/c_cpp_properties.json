@@ -1,0 +1,71 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "/Users/cric/wxWidgets/include",
+                "/Users/cric/wxWidgets/Mac/lib/wx/include/osx_cocoa-unicode-static-3.2",
+                "/Users/cric/miniforge3/include",
+                "/Users/cric/miniforge3/include/python3.9",
+                "${workspaceFolder}/src/**"
+            ],
+            "defines": [
+                "YccInSingleFileTest${fileBasenameNoExtension}"
+            ],
+            "macFrameworkPath": [
+                "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
+            ],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "macos-clang-arm64",
+            "compilerArgs": [
+                "-D__WXOSX_COCOA__"
+            ],
+            "browse": {
+                "path": [
+                    "/Users/cric/wxWidgets/include",
+                    "/Users/cric/wxWidgets/Mac/lib/wx/include/osx_cocoa-unicode-static-3.2",
+                    "/Users/cric/miniforge3/include",
+                    "/Users/cric/miniforge3/include/python3.9",
+                    "${workspaceFolder}/src"
+                ]
+            },
+            "configurationProvider": "ms-vscode.cmake-tools"
+        },
+        {
+            "name": "MacDyn",
+            "includePath": [
+                "/Users/cric/wxWidgets/include",
+                "/Users/cric/wxWidgets/MacDyn/lib/wx/include/osx_cocoa-unicode-3.2",
+                "/Users/cric/miniforge3/include",
+                "/Users/cric/miniforge3/include/python3.9",
+                "${workspaceFolder}/src/**"
+            ],
+            "defines": [
+                "YccInSingleFileTest${fileBasenameNoExtension}"
+            ],
+            "macFrameworkPath": [
+                "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
+            ],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "macos-clang-arm64",
+            "compilerArgs": [
+                "-D__WXOSX_COCOA__"
+            ],
+            "browse": {
+                "path": [
+                    "/Users/cric/wxWidgets/include",
+                    "/Users/cric/wxWidgets/MacDyn/lib/wx/include/osx_cocoa-unicode-3.2",
+                    "/Users/cric/miniforge3/include",
+                    "/Users/cric/miniforge3/include/python3.9",
+                    "${workspaceFolder}/src"
+                ]
+            },
+            "configurationProvider": "ms-vscode.cmake-tools"
+        }
+    ],
+    "version": 4
+}
